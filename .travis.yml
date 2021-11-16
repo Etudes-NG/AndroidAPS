@@ -37,7 +37,7 @@ before_cache:
   on:
     tags: true
     #branch: master
-    #all_branches: true
+    all_branches: true
     
 cache:
   directories:
