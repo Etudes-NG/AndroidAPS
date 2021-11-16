@@ -33,11 +33,11 @@ before_cache:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  draft: true
+  #draft: true
   on:
-    #tags: true
-    branch: master
-    all_branches: true
+    tags: true
+    #branch: master
+    #all_branches: true
     
 cache:
   directories:
