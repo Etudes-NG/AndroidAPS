@@ -35,8 +35,9 @@ before_cache:
   keep_history: true
   draft: true
   on:
-    tags: true
-    #branch: master
+    #tags: true
+    branch: master
+    all_branches: true
     
 cache:
   directories:
