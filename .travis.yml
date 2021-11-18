@@ -20,10 +20,10 @@ before_install:
 
 script:
   # Unit Test
-#  - ./gradlew -Pcoverage -PfirebaseDisable testFullDebugUnitTest jacocoTestFullDebugUnitTestReport
+  - ./gradlew app:fullRelease #-Pcoverage -PfirebaseDisable testFullDebugUnitTest jacocoTestFullDebugUnitTestReport
 
 after_success:
- # - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
