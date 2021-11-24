@@ -21,7 +21,7 @@ before_install:
 script:
   # Unit Test
   #- ./gradlew app:fullRelease #-Pcoverage -PfirebaseDisable testFullDebugUnitTest jacocoTestFullDebugUnitTestReport
-  - ./gradlew tasks
+  - ./gradlew assembleRelease # tasks
 
 after_success:
   #- bash <(curl -s https://codecov.io/bash)
