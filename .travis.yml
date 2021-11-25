@@ -9,19 +9,24 @@ android:
   - platform-tools
   - tools
   - build-tools-29.0.2
-  - android-
+  - android-28
   - extra-google-m2repository
   - extra-android-m2repository
   - extra-google-google_play_services
   
   
 before_install:
-  - yes | sdkmanager "platforms;android-30"
+  #- yes | sdkmanager "platforms;android-30"
 
 script:
   # Unit Test
-  #- ./gradlew app:fullRelease #-Pcoverage -PfirebaseDisable testFullDebugUnitTest jacocoTestFullDebugUnitTestReport
-  - ./gradlew assembleRelease # tasks
+  #- ./gradlew -Pcoverage -PfirebaseDisable testFullDebugUnitTest jacocoTestFullDebugUnitTestReport
+  
+  # Display list of tasks 
+  - ./gradlew tasks
+  
+  # Generate release apk
+  - ./gradlew assembleRelease
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
