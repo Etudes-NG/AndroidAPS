@@ -2,7 +2,7 @@
 <resources>
 
     <color name="cardObjectiveText">#779ECB</color>
-
+    <color name="titleHeader">#D9000000</color>
 
     <!-- light colors -->
     <color name="light_bigchart_time">@color/black</color>
@@ -26,6 +26,10 @@
     <color name="dark_uploaderBattery">@color/black</color>
     <color name="dark_uploaderBatteryEmpty">@color/red_600</color>
     <color name="dark_mStatus_home">@color/black</color>
+    <color name="dark_tempTarget_Loop">#77dd77</color>
+    <color name="dark_tempTarget">#f4d700</color>
+    <color name="dark_warning">#ffff00</color>
+    <color name="dark_alarm">#ff4444</color>
 
     <color name="dark_highColor">@color/yellow_A200</color>
     <color name="dark_lowColor">@color/RED</color>
@@ -38,10 +42,18 @@
     <color name="basal_light_lowres">@color/grey_300</color>
     <color name="basal_dark_lowres">@color/grey_500</color>
 
+    <!-- menu colors -->
+    <color name="colorCalculatorButton">#67e86a</color>
+    <color name="colorCarbsButton">#ffae01</color>
+    <color name="colorInsulinButton">#67dfe8</color>
+    <color name="colorTemptButton">#CF8BFE</color>
+    <color name="colorPrimeButton">#FBC02D</color>
 
-
-
-
+    <color name="inrange">#00FF00</color>
+    <color name="exercise">#67DFE8</color>
+    <color name="carbs">#FFFB8C00</color>
+    <color name="low">#FF0000</color>
+    <color name="tempTargetConfirmation">#77dd77</color>
 
     <!-- Material Design - Color Palette -->
     <!-- https://designguidelines.withgoogle.com/wearos/style/color.html#color-dark-color-palette-for-wear-os -->
@@ -154,15 +166,19 @@
     <color name="brown_900">#3E2723</color>
 
     <!-- Gray / Grey -->
-        <!-- @ToDo   Replace all usage from grey to gray, because that's the official color name in https://material.io/deign/color/  -->
+    <!-- @ToDo   Replace all usage from grey to gray, because that's the official color name in https://material.io/deign/color/  -->
     <color name="grey_50">#FAFAFA</color>
     <color name="gray_100">#F5F5F5</color>
     <color name="grey_300">#E0E0E0</color>
     <color name="grey_500">#9E9E9E</color>
-    <color name="gray_500">#9E9E9E</color> <!-- needed because rICTxWF01 generate color-names as grAy -->
+    <color name="gray_500">#9E9E9E
+    </color> <!-- needed because rICTxWF01 generate color-names as grAy -->
     <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_850">#313131</color>
     <color name="gray_900">#212121</color>
     <color name="grey_steampunk">#333333</color>
+    <color name="light_grey">#CCCCCC</color>
 
     <!-- Blue Gray -->
     <color name="bluegray_100">#CFD8DC</color>
@@ -173,4 +189,29 @@
     <!-- Black / White-->
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+
+    <!-- Wizard Result Colors -->
+    <color name="insulin_positive">#66BB6A</color>
+    <color name="insulin_negative">#EF5350</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="background_dark">#263238</color>
+    <color name="secondary_text">#B0BEC5</color>
+    <color name="divider">#37474F</color>
+
+    <!-- Loop Status Colors -->
+    <color name="loopClosed">#00C03E</color>
+    <color name="loopOpen">#4983D7</color>
+    <color name="loopLGS">#800080</color>
+    <color name="loopSuspended">#FFFF13</color>
+    <color name="loopDisabled">#FF1313</color>
+    <color name="loopDisconnected">#939393</color>
+    <color name="loopUnknown">#9E9E9E</color>
+    <color name="loopSuperbolus">#FFAE01</color>
+    <color name="tempBasal">#FF9800</color>
+    <color name="tempTargetDisabled">#9E9E9E</color>
+    <color name="tempTargetActive">#f4d700</color>
+    <color name="tempTargetActiveDark">#1Af4d700</color>  <!-- 10% opacity for background -->
+    <color name="white_20percent">#33FFFFFF</color>
+    <color name="white_50percent">#80FFFFFF</color>
+    <color name="white_70percent">#B3FFFFFF</color>
 </resources>
